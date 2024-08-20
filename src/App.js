@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import InputTask from './components/InputTask'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <main>
 
-export default App;
+      <div id="notifications-continer">
+      </div>
+      <section className="container vh-100 d-flex align-items-center justify-content-center ">
+
+        <div className=" w-75 rounded-3 p-lg-5 bg-light">
+          <InputTask />
+          
+        </div>
+      </section>
+    </main>
+  )
+}
